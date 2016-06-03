@@ -1,0 +1,202 @@
+/***
+* Methods Payment Sprite SVG
+* Info -> dimensions size each symbol 58px / 46px
+* Info -> dimensions size each symbol 56px / 44px
+* Info -> dimensions size each symbol 54px / 43px
+* Info -> dimensions size each symbol 52px / 41px
+* ---------------------
+* Info -> dimensions size artefato 248px / 254px
+* Info -> dimensions size artefato 240px / 246px
+* Info -> dimensions size artefato 232px / 237px
+* Info -> dimensions size artefato 224px / 229px
+*/
+
+.method {
+    > div {
+        display: inline-block;
+        vertical-align: top;
+        margin: 2px 0;
+        
+        h5 {
+            text-indent: -9999em;
+        }
+    }
+    .item-method {
+        //width: 58px; height: 46px;
+        //width: 56px; height: 44px;
+        width: 52px; height: 42px;
+        
+        position: relative;
+        //@include transition();
+
+        &:hover {
+            &:before, &:after {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        &:before {
+            content: attr(data-method);
+
+            background: #c90008;
+            border-radius: 20px;
+            color: #f1f1f1;
+            font-family: Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            text-shadow: -1px -1px #111;
+            white-space: nowrap;
+
+            padding: 4px 19px;
+            min-width: 60px;
+
+            position: absolute;
+            left: 0;
+            bottom: -28px;
+            z-index: 9999;
+
+            opacity: 0;
+            visibility: hidden;
+
+            //@include transition();
+        }
+        &:after {
+            content: '';
+            display: inline-block;
+            vertical-align: top;
+
+            border-bottom: 7px solid #c90008;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+
+            position: absolute;
+            top: 86%;
+            left: 50%;
+
+            opacity: 0;
+            visibility: hidden;
+
+            //@include center-h();
+            //@include transition();
+        }
+    } // item-method
+
+    .visa {
+        background: url('vector/payment.svg') no-repeat 0 0; 
+    }
+    .master {
+        //background: url('vector/payment.svg') no-repeat -63px 0; // 58px 46px
+        //background: url('vector/payment.svg') no-repeat -61px 0; // 56px 44px 
+        //background: url('vector/payment.svg') no-repeat -59px 0; // 54px 43px 
+        background: url('vector/payment.svg') no-repeat -56px 0; // 52px 42px 
+    }
+    .amex {
+        //background: url('vector/payment.svg') no-repeat -126px 0; // 58px 46px 
+        //background: url('vector/payment.svg') no-repeat -122px 0; // 56px 44px
+        //background: url('vector/payment.svg') no-repeat -118px 0; // 54px 43px
+        background: url('vector/payment.svg') no-repeat -114px 0; // 52px 42px
+    }
+    .diners {
+        //background: url('vector/payment.svg') no-repeat -190px 0; // 58px 46px
+        //background: url('vector/payment.svg') no-repeat -184px 0; // 56px 44px 
+        //background: url('vector/payment.svg') no-repeat -178px 0; // 54px 43px 
+        background: url('vector/payment.svg') no-repeat -172px 0; // 52px 42px 
+    }
+    .itau {
+        //background: url('vector/payment.svg') no-repeat 0 -51px; // 58px 46px
+        //background: url('vector/payment.svg') no-repeat 0 -50px; // 56px 44px
+        //background: url('vector/payment.svg') no-repeat 0 -48px; // 54px 43px
+        background: url('vector/payment.svg') no-repeat 0 -46px; // 52px 42px
+    }
+    .bradesco {
+        //background: url('vector/payment.svg') no-repeat -63px -52px; // 58px 46px
+        //background: url('vector/payment.svg') no-repeat -61px -50px; // 56px 44px
+        //background: url('vector/payment.svg') no-repeat -59px -48px; // 54px 43px
+        background: url('vector/payment.svg') no-repeat -57px -46px; // 52px 42px
+    }
+    .bb {
+        //background: url('vector/payment.svg') no-repeat -126px -52px; // 58px x 46px
+        //background: url('vector/payment.svg') no-repeat -122px -50px; // 56px 44px
+        //background: url('vector/payment.svg') no-repeat -118px -48px; // 54px 43px
+        background: url('vector/payment.svg') no-repeat -114px -46px; // 52px 42px
+    }
+    .hsbc {
+        //background: url('vector/payment.svg') no-repeat -190px -52px; // 58px x 46px
+        //background: url('vector/payment.svg') no-repeat -184px -50px; // 56px 44px 
+        //background: url('vector/payment.svg') no-repeat -178px -48px; // 54px 43px 
+        background: url('vector/payment.svg') no-repeat -172px -46px; // 52px 42px 
+    }
+    .elo {
+        //background: url('vector/payment.svg') no-repeat 0 -104px; // 58px x 46px 
+        //background: url('vector/payment.svg') no-repeat 0 -100px; // 56px 44px
+        //background: url('vector/payment.svg') no-repeat 0 -97px; // 54px 43px
+        background: url('vector/payment.svg') no-repeat 0 -93px; // 52px 42px
+    }
+    .aura {
+        //background: url('vector/payment.svg') no-repeat -63px -104px; // 58px x 46px
+        //background: url('vector/payment.svg') no-repeat -61px -100px; // 56px 44px 
+        //background: url('vector/payment.svg') no-repeat -59px -97px; // 54px 43px 
+        background: url('vector/payment.svg') no-repeat -57px -93px; // 52px 42px 
+    }
+    .hipercard {
+        //background: url('vector/payment.svg') no-repeat -126px -104px; // 58px x 46px
+        //background: url('vector/payment.svg') no-repeat -122px -100px; // 56px 44px
+        //background: url('vector/payment.svg') no-repeat -118px -97px; // 54px 43px
+        background: url('vector/payment.svg') no-repeat -114px -93px; // 52px 42px
+    }
+    .pageseguro {
+        //background: url('vector/payment.svg') no-repeat -190px -104px; // 58px x 46px
+        //background: url('vector/payment.svg') no-repeat -184px -100px; // 56px 44px
+        //background: url('vector/payment.svg') no-repeat -178px -97px; // 54px 43px
+        background: url('vector/payment.svg') no-repeat -172px -93px; // 52px 42px
+    }
+    .banrisul {
+        //background: url('vector/payment.svg') no-repeat 0 -156px; // 58px x 46px
+        //background: url('vector/payment.svg') no-repeat 0 -151px; // 56px 44px 
+        //background: url('vector/payment.svg') no-repeat 0 -145px; // 54px 43px 
+        background: url('vector/payment.svg') no-repeat 0 -140px; // 52px 42px 
+    }
+    .boleto {
+        //background: url('vector/payment.svg') no-repeat -63px -156px; // 58px x 46px 
+        //background: url('vector/payment.svg') no-repeat -61px -151px; // 56px 44px 
+        //background: url('vector/payment.svg') no-repeat -59px -145px; // 54px 43px 
+        background: url('vector/payment.svg') no-repeat -57px -140px; // 52px 42px 
+    }
+    .bcash {
+        //background: url('vector/payment.svg') no-repeat -126px -156px; // 58px x 46px 
+        //background: url('vector/payment.svg') no-repeat -122px -151px; // 56px 44px 
+        //background: url('vector/payment.svg') no-repeat -118px -145px; // 54px 43px 
+        background: url('vector/payment.svg') no-repeat -114px -140px; // 52px 42px 
+    }
+    .mercadopago {
+        //background: url('vector/payment.svg') no-repeat -190px -155px; // 58px x 46px
+        //background: url('vector/payment.svg') no-repeat -184px -151px; // 56px 44px
+        //background: url('vector/payment.svg') no-repeat -178px -145px; // 54px 43px
+        background: url('vector/payment.svg') no-repeat -172px -140px; // 52px 42px
+    }
+    .deposito {
+        //background: url('vector/payment.svg') no-repeat 0 -208px; // 58px x 46px
+        //background: url('vector/payment.svg') no-repeat 0 -202px; // 56px 44px 
+        //background: url('vector/payment.svg') no-repeat 0 -194px; // 54px 43px 
+        background: url('vector/payment.svg') no-repeat 0 -188px; // 52px 42px 
+    }
+    .hiper {
+        //background: url('vector/payment.svg') no-repeat -63px -208px; // 58px x 46px
+        //background: url('vector/payment.svg') no-repeat -61px -202px; // 56px 44px 
+        //background: url('vector/payment.svg') no-repeat -59px -194px; // 54px 43px 
+        background: url('vector/payment.svg') no-repeat -57px -188px; // 52px 42px 
+    }
+    .traycheckout {
+        //background: url('vector/payment.svg') no-repeat -127px -208px; // 58px x 46px 
+        //background: url('vector/payment.svg') no-repeat -123px -202px; // 56px 44px 
+        //background: url('vector/payment.svg') no-repeat -119px -194px; // 54px 43px 
+        background: url('vector/payment.svg') no-repeat -115px -188px; // 52px 42px 
+    }
+    .paypal {
+        //background: url('vector/payment.svg') no-repeat -190px -208px; // 58px x 46px
+        //background: url('vector/payment.svg') no-repeat -184px -202px; // 56px 44px 
+        //background: url('vector/payment.svg') no-repeat -178px -194px; // 54px 43px 
+        background: url('vector/payment.svg') no-repeat -172px -188px; // 52px 42px 
+    }
+} // method
